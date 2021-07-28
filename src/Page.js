@@ -49,14 +49,14 @@ const Page = ({
 Page.propTypes = {
   isLight: PropTypes.bool.isRequired,
   image: PropTypes.element.isRequired,
-  containerStyles: ViewPropTypes.style,
-  imageContainerStyles: ViewPropTypes.style,
+  containerStyles: PropTypes.object,
+  imageContainerStyles: PropTypes.object,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     .isRequired,
   allowFontScaling: PropTypes.bool,
-  titleStyles: Text.propTypes.style,
-  subTitleStyles: Text.propTypes.style,
+  titleStyles: PropTypes.object,
+  subTitleStyles: PropTypes.object,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
 };

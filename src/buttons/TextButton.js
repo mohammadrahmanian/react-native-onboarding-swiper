@@ -17,7 +17,7 @@ const TextButton = ({ size, onPress, textStyle, allowFontScaling, style, childre
 TextButton.propTypes = {
   size: PropTypes.number.isRequired,
   onPress: PropTypes.func.isRequired,
-  textStyle: Text.propTypes.style,
+  textStyle: PropTypes.object,
   allowFontScaling: PropTypes.bool,
 };
 
